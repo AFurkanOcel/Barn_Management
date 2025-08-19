@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    internal class Sale
+    public class Sale
     {
+        public int SaleId { get; set; }
+        public int Quantity { get; set; }
+        public decimal TotalPrice { get; set; }
+        public DateTime SaleDate { get; set; }
+
+        public int ProductId { get; set; }
+        public virtual Product Product { get; set; }
+
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 }

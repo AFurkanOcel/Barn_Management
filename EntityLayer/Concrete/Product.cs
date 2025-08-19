@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    internal class Product
+    public class Product
     {
+        public int ProductId { get; set; }
+        public string ProductType { get; set; }
+        public int Quantity { get; set; }
+        public DateTime ProducedAt { get; set; }
+
+        public int AnimalId { get; set; }
+        public virtual Animal Animal { get; set; }
+
+        public List<Sale> Sales { get; set; }
     }
 }

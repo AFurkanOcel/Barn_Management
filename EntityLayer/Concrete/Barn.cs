@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    internal class Barn
+    public class Barn
     {
+        public int BarnId { get; set; }
+        public int Capacity { get; set; }
+        public int CurrentAnimalCount { get; set; }
+        public decimal Balance { get; set; }
+
+        public List<Animal> Animals { get; set; }
     }
 }
