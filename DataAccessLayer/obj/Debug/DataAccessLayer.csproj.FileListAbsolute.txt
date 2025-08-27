@@ -1,0 +1,17 @@
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityLayer.dll
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityLayer.pdb
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityLayer.dll.config
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
+D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache

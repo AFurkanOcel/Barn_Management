@@ -1,0 +1,12 @@
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityLayer.dll.config
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityLayer.dll
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityLayer.pdb
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityFramework.dll
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityFramework.xml
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\obj\Debug\EntityLa.DA06A3F2.Up2Date
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\obj\Debug\EntityLayer.dll
+D:\github\AFurkanOcel\Barn_Management\EntityLayer\obj\Debug\EntityLayer.pdb

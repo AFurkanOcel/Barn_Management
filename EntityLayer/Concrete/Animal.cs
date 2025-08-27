@@ -12,7 +12,6 @@ namespace EntityLayer.Concrete
         public string Type { get; set; }
         public int Age { get; set; }
         public string Gender { get; set; }
-        public int Lifetime { get; set; }
         public bool IsAlive { get; set; }
 
         public int BarnId { get; set; }

@@ -51,8 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\Context.cs" />
+    <Compile Include="Abstract\IAnimalDal.cs" />
+    <Compile Include="Abstract\IBarnDal.cs" />
+    <Compile Include="Abstract\IGenericDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\ISaleDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
+    <Compile Include="Context\MyContext.cs" />
+    <Compile Include="EntityFramework\EfAnimalDal.cs" />
+    <Compile Include="EntityFramework\EfBarnDal.cs" />
+    <Compile Include="EntityFramework\EfProductDal.cs" />
+    <Compile Include="EntityFramework\EfSaleDal.cs" />
+    <Compile Include="EntityFramework\EfUserDal.cs" />
+    <Compile Include="Migrations\202508250630190_mig1.cs" />
+    <Compile Include="Migrations\202508250630190_mig1.Designer.cs">
+      <DependentUpon>202508250630190_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
@@ -60,11 +77,16 @@
       <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202508250630190_mig1.resx">
+      <DependentUpon>202508250630190_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
