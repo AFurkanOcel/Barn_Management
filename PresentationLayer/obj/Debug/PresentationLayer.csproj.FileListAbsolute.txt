@@ -19,3 +19,15 @@ D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLa
 D:\github\AFurkanOcel\Barn_Management\PresentationLayer\bin\Debug\EntityLayer.dll
 D:\github\AFurkanOcel\Barn_Management\PresentationLayer\bin\Debug\EntityLayer.pdb
 D:\github\AFurkanOcel\Barn_Management\PresentationLayer\bin\Debug\EntityLayer.dll.config
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.AnimalForm.resources
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\Interop.WMPLib.dll
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\AxInterop.WMPLib.dll
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.csproj.ResolveComReference.cache
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\bin\Debug\Interop.WMPLib.dll
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\bin\Debug\AxInterop.WMPLib.dll
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\bin\Debug\Audios\Music.mp3
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.Settingsform.resources
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.ProductsForm.resources
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.LogInForm.resources
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.SalesForm.resources
+D:\github\AFurkanOcel\Barn_Management\PresentationLayer\obj\Debug\PresentationLayer.SignUpForm.resources

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
+using AxWMPLib;
 
 namespace PresentationLayer
 {
@@ -11,7 +13,7 @@ namespace PresentationLayer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new MainForm());
+            Application.Run(new LogInForm(false) { StartPosition = FormStartPosition.CenterScreen });
         }
     }
 }
