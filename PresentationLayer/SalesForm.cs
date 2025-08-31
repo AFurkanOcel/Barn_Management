@@ -71,6 +71,8 @@ namespace PresentationLayer
                 if (!UserControl.Session.CurrentUserType)
                 {
                     MessageBox.Show("Only admins can add balance!");
+                    balanceTxtBox.Text = "00";
+                    return;
                 }
 
                 balanceTxtBox.Text = "00";

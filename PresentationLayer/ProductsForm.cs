@@ -134,6 +134,8 @@ namespace PresentationLayer
             if (!UserControl.Session.CurrentUserType)
             {
                 MessageBox.Show("Only admins can sell animals!");
+                ıdTextBox.Text = "";
+                return;
             }
 
             int id;
@@ -315,6 +317,8 @@ namespace PresentationLayer
             if (!UserControl.Session.CurrentUserType)
             {
                 MessageBox.Show("Only admins can sell products!");
+                productsComboBox.Text = "";
+                return;
             }
             if (productsComboBox.Text == "All")
             {

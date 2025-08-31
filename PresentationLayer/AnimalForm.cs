@@ -124,6 +124,9 @@ namespace PresentationLayer
                 if (!UserControl.Session.CurrentUserType)
                 {
                     MessageBox.Show("Only admins can add animals!");
+                    animalComboBox.SelectedItem = null;
+                    nameTextBox.Text = "";
+                    ageTextBox.Text = "";
                     return;
                 }
 
