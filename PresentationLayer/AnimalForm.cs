@@ -72,7 +72,7 @@ namespace PresentationLayer
             this.Hide();
         }
 
-        private void addBtn_Click(object sender, EventArgs e)
+        private void buyBtn_Click(object sender, EventArgs e)
         {
             if (animalComboBox.SelectedItem == null)
             {

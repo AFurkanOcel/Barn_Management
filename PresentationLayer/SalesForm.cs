@@ -68,6 +68,11 @@ namespace PresentationLayer
 
             else
             {
+                if (!UserControl.Session.CurrentUserType)
+                {
+                    MessageBox.Show("Only admins can add balance!");
+                }
+
                 balanceTxtBox.Text = "00";
 
                 TransactionManager tm = new TransactionManager();
