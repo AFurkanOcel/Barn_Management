@@ -13,5 +13,3 @@ D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.
 D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
 D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
-D:\github\AFurkanOcel\Barn_Management\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache

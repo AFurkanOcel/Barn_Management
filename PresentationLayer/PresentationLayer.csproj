@@ -74,6 +74,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MusicControl.cs" />
     <Compile Include="ProductsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +101,7 @@
     <Compile Include="SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl.cs" />
     <EmbeddedResource Include="AnimalForm.resx">
       <DependentUpon>AnimalForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +150,14 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{2e410a6a-412f-468f-bfae-7255d36381d0}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{80f711b2-a669-4bb7-8187-9a1e5d2e75ee}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{93ef0a1c-9466-4c45-81ea-f65903ed7092}</Project>
+      <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

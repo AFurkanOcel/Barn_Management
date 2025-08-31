@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EntityLayer.Concrete;
+using EntityLayer.Entities;
 
-namespace BusinessLayer.Abstract
+namespace DataAccessLayer.Abstract
 {
-    public interface ISaleService : IGenericService<Sale>
+    public interface ITransaction: IGenericDal<Transaction>
     {
     }
 }

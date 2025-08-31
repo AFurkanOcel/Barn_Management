@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IGenericDal<T> where T : class
+    public interface IGenericDal<T>
     {
-        void Insert(T entity);
-        void Delete(T entity);
-        void Update(T Entity);
+        int Insert(T p);
+        int Delete(T p);
+        int Update(T p);
         List<T> GetAll();
-        T GetById(int Id);
+        T GetById(int id);
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
+using static PresentationLayer.UserControl;
 
 namespace PresentationLayer
 {
@@ -31,23 +32,58 @@ namespace PresentationLayer
             }
         }
 
-        private void LogInBtn_Click(object sender, EventArgs e)
-        {
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
-                this.Hide();
-        }
-
         private void LogInForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void logInBtn_Click(object sender, EventArgs e)
+        {
+            if(usernameTxtBox.Text.Length <= 0)
+            {
+                MessageBox.Show("Username cannot be empty!");
+            }
+            else if(passwordTextBox.Text.Length <= 0)
+            {
+                MessageBox.Show("Password cannot be empty!");
+            }
+            else
+            {
+                BusinessLayer.UserManager userManager = new BusinessLayer.UserManager();
+                var user = userManager.GetAll().FirstOrDefault(x => x.UserName == usernameTxtBox.Text && x.Password == passwordTextBox.Text);
+                if(user != null)
+                {
+                    Session.CurrentUserId = user.UserID;
+                    Session.CurrentUserType = user.IsAdmin;
+
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password!");
+                }
+            }
+        }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
         {
             SignUpForm signUpForm = new SignUpForm();
             signUpForm.Show();
             this.Hide();
+        }
+
+        public void SetMusicVolume()
+        {
+            if (MusicControl.IsCloseMusicButtonEnabled)
+            {
+                axWindowsMediaPlayer1.settings.volume = 0;
+            }
+            else
+            {
+                axWindowsMediaPlayer1.settings.volume = 100;
+            }
         }
     }
 }

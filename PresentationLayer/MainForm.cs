@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 using WMPLib;
 
 namespace PresentationLayer
@@ -28,7 +29,10 @@ namespace PresentationLayer
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            TransactionManager tm = new TransactionManager();
+            var transactions = tm.GetAll();
+            decimal lastBalance = transactions.Any() ? transactions.OrderByDescending(t => t.Date).First().Balance : 0;
+            balanceLbl.Text = lastBalance.ToString() + " $";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

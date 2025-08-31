@@ -4,18 +4,15 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EntityLayer.Concrete;
+using EntityLayer.Entities;
 
-namespace DataAccessLayer.Context
+namespace DataAccessLayer
 {
-
-
-    public class MyContext : DbContext
+    public class Context: DbContext
     {
-        public DbSet<Animal> Animals { get; set; }
-        public DbSet<Barn> Barns { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Sale> Sales { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
     }
 }

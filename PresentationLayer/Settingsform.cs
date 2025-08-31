@@ -27,14 +27,16 @@ namespace PresentationLayer
             this.Hide();
         }
 
-        private void openMusicBtn_Click(object sender, EventArgs e)
+        public void openMusicBtn_Click(object sender, EventArgs e)
         {
-
+            MusicControl.IsCloseMusicButtonEnabled = false;
+            ((LogInForm)Application.OpenForms["LogInForm"]).SetMusicVolume();
         }
 
         public void closeMusicBtn_Click(object sender, EventArgs e)
         {
-
+            MusicControl.IsCloseMusicButtonEnabled = true;
+            ((LogInForm)Application.OpenForms["LogInForm"]).SetMusicVolume();
         }
 
         private void logOutBtn_Click(object sender, EventArgs e)

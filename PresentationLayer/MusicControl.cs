@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Abstract
+namespace PresentationLayer
 {
-    public interface ISaleDal: IGenericDal<EntityLayer.Concrete.Sale>
+    public class MusicControl
     {
+        public static bool IsCloseMusicButtonEnabled { get; set; }
     }
 }

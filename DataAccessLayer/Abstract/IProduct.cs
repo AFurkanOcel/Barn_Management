@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EntityLayer.Concrete;
+using EntityLayer.Entities;
 
-namespace BusinessLayer.Abstract
+namespace DataAccessLayer.Abstract
 {
-    public interface IBarnService : IGenericService<Barn>
+    public interface IProduct: IGenericDal<Product>
     {
     }
 }

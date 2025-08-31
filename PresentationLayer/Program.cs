@@ -13,7 +13,7 @@ namespace PresentationLayer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new LogInForm(false) { StartPosition = FormStartPosition.CenterScreen });
+            Application.Run(new LogInForm(false));
         }
     }
 }

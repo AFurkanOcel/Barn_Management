@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer;
+using EntityLayer.Entities;
+
+namespace BusinessLayer
+{
+    public class TransactionManager
+    {
+        Repository<Transaction> TransactionRepo = new Repository<Transaction>();
+
+        public List<Transaction> GetAll()
+        {
+            return TransactionRepo.GetAll();
+        }
+        public int Insert(Transaction t)
+        {
+            return TransactionRepo.Insert(t);
+        }
+    }
+}

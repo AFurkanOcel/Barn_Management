@@ -13,3 +13,6 @@ D:\github\AFurkanOcel\Barn_Management\BusinessLayer\obj\Debug\BusinessLayer.cspr
 D:\github\AFurkanOcel\Barn_Management\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 D:\github\AFurkanOcel\Barn_Management\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\github\AFurkanOcel\Barn_Management\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\github\AFurkanOcel\Barn_Management\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+D:\github\AFurkanOcel\Barn_Management\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\github\AFurkanOcel\Barn_Management\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml

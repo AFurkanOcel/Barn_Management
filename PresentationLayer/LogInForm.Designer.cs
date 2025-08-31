@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
-            this.LogInBtn = new System.Windows.Forms.Button();
+            this.logInBtn = new System.Windows.Forms.Button();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.usernameTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.signUpBtn = new System.Windows.Forms.Button();
             this.welcomeLbl = new System.Windows.Forms.Label();
             this.logInLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
-            // LogInBtn
+            // logInBtn
             // 
-            this.LogInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LogInBtn.Location = new System.Drawing.Point(157, 301);
-            this.LogInBtn.Name = "LogInBtn";
-            this.LogInBtn.Size = new System.Drawing.Size(150, 64);
-            this.LogInBtn.TabIndex = 0;
-            this.LogInBtn.Text = "Log In";
-            this.LogInBtn.UseVisualStyleBackColor = true;
-            this.LogInBtn.Click += new System.EventHandler(this.LogInBtn_Click);
+            this.logInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.logInBtn.Location = new System.Drawing.Point(157, 301);
+            this.logInBtn.Name = "logInBtn";
+            this.logInBtn.Size = new System.Drawing.Size(150, 64);
+            this.logInBtn.TabIndex = 0;
+            this.logInBtn.Text = "Log In";
+            this.logInBtn.UseVisualStyleBackColor = true;
+            this.logInBtn.Click += new System.EventHandler(this.logInBtn_Click);
             // 
             // axWindowsMediaPlayer1
             // 
@@ -90,24 +90,24 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Password:";
             // 
-            // textBox1
+            // passwordTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(82, 238);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(327, 30);
-            this.textBox1.TabIndex = 7;
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordTextBox.Location = new System.Drawing.Point(82, 238);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(327, 30);
+            this.passwordTextBox.TabIndex = 7;
             // 
-            // button1
+            // signUpBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(157, 453);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 64);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Sign Up";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.signUpBtn.Location = new System.Drawing.Point(157, 453);
+            this.signUpBtn.Name = "signUpBtn";
+            this.signUpBtn.Size = new System.Drawing.Size(150, 64);
+            this.signUpBtn.TabIndex = 9;
+            this.signUpBtn.Text = "Sign Up";
+            this.signUpBtn.UseVisualStyleBackColor = true;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
             // welcomeLbl
             // 
@@ -139,13 +139,13 @@
             this.ClientSize = new System.Drawing.Size(482, 553);
             this.Controls.Add(this.logInLbl);
             this.Controls.Add(this.welcomeLbl);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.usernameTxtBox);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Controls.Add(this.LogInBtn);
+            this.Controls.Add(this.logInBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -161,13 +161,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button LogInBtn;
+        private System.Windows.Forms.Button logInBtn;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.TextBox usernameTxtBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Button signUpBtn;
         private System.Windows.Forms.Label welcomeLbl;
         private System.Windows.Forms.Label logInLbl;
     }
