@@ -33,6 +33,8 @@ namespace PresentationLayer
             age.Interval = 40000;
             age.Tick += (s, e) => AgeTimer();
             age.Start();
+
+            this.FormClosed += (s, args) => Application.Exit();
         }
 
         private void button3_Click(object sender, EventArgs e)

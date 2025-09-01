@@ -30,6 +30,8 @@ namespace PresentationLayer
             panel3.BackColor = System.Drawing.ColorTranslator.FromHtml(panelsColor);
             panel4.BackColor = System.Drawing.ColorTranslator.FromHtml(panelsColor);
             panel5.BackColor = System.Drawing.ColorTranslator.FromHtml(panelsColor);
+
+            this.FormClosed += (s, args) => Application.Exit();
         }
 
         private void AnimalForm_Load(object sender, EventArgs e)

@@ -18,6 +18,12 @@ namespace PresentationLayer
             InitializeComponent();
 
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F07837");
+
+            this.FormClosed += (s, args) => Application.Exit();
+        }
+        private void Settingsform_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,12 +54,15 @@ namespace PresentationLayer
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
+            DialogResult result = MessageBox.Show(
+                "Do you really want to exit?",
+                "Exit Confirmation",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
-        private void Settingsform_Load(object sender, EventArgs e)
-        {
-
+            if (result == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }

@@ -30,6 +30,8 @@ namespace PresentationLayer
                 axWindowsMediaPlayer1.settings.setMode("loop", true);
                 axWindowsMediaPlayer1.Ctlcontrols.play();
             }
+
+            this.FormClosed += (s, args) => Application.Exit();
         }
 
         private void LogInForm_Load(object sender, EventArgs e)

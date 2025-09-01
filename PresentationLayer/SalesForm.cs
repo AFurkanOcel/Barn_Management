@@ -20,6 +20,8 @@ namespace PresentationLayer
             InitializeComponent();
 
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#F07837");
+
+            this.FormClosed += (s, args) => Application.Exit();
         }
 
         private void SalesForm_Load(object sender, EventArgs e)

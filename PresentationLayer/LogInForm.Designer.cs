@@ -114,7 +114,7 @@
             this.welcomeLbl.AutoSize = true;
             this.welcomeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.welcomeLbl.ForeColor = System.Drawing.Color.White;
-            this.welcomeLbl.Location = new System.Drawing.Point(98, 41);
+            this.welcomeLbl.Location = new System.Drawing.Point(102, 32);
             this.welcomeLbl.Name = "welcomeLbl";
             this.welcomeLbl.Size = new System.Drawing.Size(286, 69);
             this.welcomeLbl.TabIndex = 10;

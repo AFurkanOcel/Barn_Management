@@ -25,6 +25,8 @@ namespace PresentationLayer
             panel2.BackColor = System.Drawing.ColorTranslator.FromHtml(panelsColor);
             panel3.BackColor = System.Drawing.ColorTranslator.FromHtml(panelsColor);
             panel4.BackColor = System.Drawing.ColorTranslator.FromHtml(panelsColor);
+
+            this.FormClosed += (s, args) => Application.Exit();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
