@@ -39,26 +39,37 @@ namespace PresentationLayer
 
         private void logInBtn_Click(object sender, EventArgs e)
         {
-            if(usernameTxtBox.Text.Length <= 0)
+            if (usernameTxtBox.Text.Length <= 0)
             {
                 MessageBox.Show("Username cannot be empty!");
             }
-            else if(passwordTextBox.Text.Length <= 0)
+            else if (passwordTextBox.Text.Length <= 0)
             {
                 MessageBox.Show("Password cannot be empty!");
             }
             else
             {
                 BusinessLayer.UserManager userManager = new BusinessLayer.UserManager();
-                var user = userManager.GetAll().FirstOrDefault(x => x.UserName == usernameTxtBox.Text && x.Password == passwordTextBox.Text);
-                if(user != null)
-                {
-                    Session.CurrentUserId = user.UserID;
-                    Session.CurrentUserType = user.IsAdmin;
+                var user = userManager.GetAll().FirstOrDefault(x => x.UserName == usernameTxtBox.Text);
 
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
-                    this.Hide();
+                if (user != null)
+                {
+                    // Burada hash doğrulama yapıyoruz
+                    bool isPasswordValid = Kript.VerifyPassword(passwordTextBox.Text, user.Password);
+
+                    if (isPasswordValid)
+                    {
+                        Session.CurrentUserId = user.UserID;
+                        Session.CurrentUserType = user.IsAdmin;
+
+                        MainForm mainForm = new MainForm();
+                        mainForm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password!");
+                    }
                 }
                 else
                 {
@@ -66,6 +77,7 @@ namespace PresentationLayer
                 }
             }
         }
+
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {

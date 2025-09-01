@@ -60,9 +60,11 @@ namespace PresentationLayer
             {
                 if (userRadioBtn.Checked)
                 {
+                    string hashedPassword = Kript.HashPassword(passwordTextBox.Text);
+
                     EntityLayer.Entities.User user = new EntityLayer.Entities.User();
                     user.UserName = usernameTxtBox.Text;
-                    user.Password = passwordTextBox.Text;
+                    user.Password = hashedPassword;
                     user.IsAdmin = false;
                     userManager.Insert(user);
                     MessageBox.Show("User registered successfully!");
@@ -72,12 +74,17 @@ namespace PresentationLayer
                 }
                 else
                 {
+                    string hashedPassword = Kript.HashPassword(passwordTextBox.Text);
+
                     EntityLayer.Entities.User user = new EntityLayer.Entities.User();
                     user.UserName = usernameTxtBox.Text;
-                    user.Password = passwordTextBox.Text;
-                    user.IsAdmin = true;
+                    user.Password = hashedPassword; 
+                    user.IsAdmin = !userRadioBtn.Checked; 
+
                     userManager.Insert(user);
+
                     MessageBox.Show("User registered successfully!");
+
                     LogInForm logInForm = new LogInForm(true);
                     logInForm.Show();
                     this.Hide();
