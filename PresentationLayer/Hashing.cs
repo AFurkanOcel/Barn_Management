@@ -1,7 +1,4 @@
-﻿using System;
-using BCrypt.Net;
-
-public static class Kript
+﻿public static class Kript
 {
     public static string HashPassword(string password)
     {

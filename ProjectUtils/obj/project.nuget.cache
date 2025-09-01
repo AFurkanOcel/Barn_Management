@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ca5/jbqppuo=",
+  "success": true,
+  "projectFilePath": "D:\\github\\AFurkanOcel\\Barn_Management\\ProjectUtils\\ProjectUtils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Furkan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Furkan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

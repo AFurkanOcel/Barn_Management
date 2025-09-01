@@ -1,3 +1,2 @@
-1) hayvan öldüðü 20 yaþýný deðil 19 yaþýný gösteriyo en son, update dememiz gerekiyo 20 yi göstermesi için.
-2) loglama yapýlmalý, microsoft extension vb. ile.
-3) read.me ve about kýsmý düzenlenmeli.
+1) loglama yapýlmalý, microsoft extension vb. ile.
+2) read.me ve about kýsmý düzenlenmeli.
