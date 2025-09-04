@@ -2,7 +2,7 @@
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IProduct: IGenericDal<Product>
+    public interface IProductDal: IGenericDal<Product>
     {
     }
 }

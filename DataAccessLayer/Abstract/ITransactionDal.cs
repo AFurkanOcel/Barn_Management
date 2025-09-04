@@ -2,7 +2,7 @@
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ITransaction: IGenericDal<Transaction>
+    public interface ITransactionDal: IGenericDal<Transaction>
     {
     }
 }
