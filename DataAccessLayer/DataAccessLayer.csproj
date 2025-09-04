@@ -53,8 +53,8 @@
   <ItemGroup>
     <Compile Include="Abstract\IAnimalDal.cs" />
     <Compile Include="Abstract\IGenericDal.cs" />
-    <Compile Include="Abstract\IProduct.cs" />
-    <Compile Include="Abstract\ITransaction.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\ITransactionDal.cs" />
     <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Migrations\Configuration.cs" />

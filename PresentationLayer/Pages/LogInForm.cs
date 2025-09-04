@@ -48,8 +48,7 @@ namespace PresentationLayer
 
                 if (user != null)
                 {
-                    // Burada hash doğrulama yapıyoruz
-                    bool isPasswordValid = Kript.VerifyPassword(passwordTextBox.Text, user.Password);
+                    bool isPasswordValid = Hashing.VerifyPassword(passwordTextBox.Text, user.Password);
 
                     if (isPasswordValid)
                     {

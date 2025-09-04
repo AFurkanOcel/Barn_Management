@@ -1,4 +1,4 @@
-﻿public static class Kript
+﻿public static class Hashing
 {
     public static string HashPassword(string password)
     {

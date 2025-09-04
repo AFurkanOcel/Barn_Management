@@ -53,37 +53,26 @@ namespace PresentationLayer
             }
             else
             {
+                string hashedPassword = Hashing.HashPassword(passwordTextBox.Text);
+
+                EntityLayer.Entities.User user = new EntityLayer.Entities.User();
+                user.UserName = usernameTxtBox.Text;
+                user.Password = hashedPassword;
+
                 if (userRadioBtn.Checked)
                 {
-                    string hashedPassword = Kript.HashPassword(passwordTextBox.Text);
-
-                    EntityLayer.Entities.User user = new EntityLayer.Entities.User();
-                    user.UserName = usernameTxtBox.Text;
-                    user.Password = hashedPassword;
                     user.IsAdmin = false;
-                    userManager.Insert(user);
-                    MessageBox.Show("User registered successfully!");
-                    LogInForm logInForm = new LogInForm(true);
-                    logInForm.Show();
-                    this.Hide();
                 }
                 else
                 {
-                    string hashedPassword = Kript.HashPassword(passwordTextBox.Text);
-
-                    EntityLayer.Entities.User user = new EntityLayer.Entities.User();
-                    user.UserName = usernameTxtBox.Text;
-                    user.Password = hashedPassword; 
-                    user.IsAdmin = !userRadioBtn.Checked; 
-
-                    userManager.Insert(user);
-
-                    MessageBox.Show("User registered successfully!");
-
-                    LogInForm logInForm = new LogInForm(true);
-                    logInForm.Show();
-                    this.Hide();
+                    user.IsAdmin = true;
                 }
+
+                userManager.Insert(user);
+                MessageBox.Show("User registered successfully!");
+                LogInForm logInForm = new LogInForm(true);
+                logInForm.Show();
+                this.Hide();
             }
         }
     }

@@ -83,7 +83,6 @@
             this.balanceTxtBox.Size = new System.Drawing.Size(156, 53);
             this.balanceTxtBox.TabIndex = 20;
             this.balanceTxtBox.Text = "00";
-            this.balanceTxtBox.TextChanged += new System.EventHandler(this.balanceTxtBox_TextChanged);
             // 
             // updateBtn
             // 

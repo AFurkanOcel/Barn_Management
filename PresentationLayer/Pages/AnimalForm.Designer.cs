@@ -305,7 +305,6 @@
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(227, 27);
             this.ageTextBox.TabIndex = 11;
-            this.ageTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // dataGridViewAnimals
             // 

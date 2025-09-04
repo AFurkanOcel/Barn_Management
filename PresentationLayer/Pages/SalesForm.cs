@@ -40,11 +40,6 @@ namespace PresentationLayer
             this.Hide();
         }
 
-        private void balanceTxtBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void addBtn_Click(object sender, EventArgs e)
         {
             decimal amount = Convert.ToInt32(balanceTxtBox.Text);
@@ -67,7 +62,6 @@ namespace PresentationLayer
                 balanceTxtBox.Text = "00";
 
                 TransactionManager tm = new TransactionManager();
-
                 var transactions = tm.GetAll();
                 decimal lastBalance = transactions.Any() ? transactions.OrderByDescending(t => t.Date).First().Balance : 0;
                 decimal newBalance = lastBalance + amount;

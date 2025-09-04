@@ -605,9 +605,12 @@ namespace PresentationLayer
 
                 switch (animal.Type)
                 {
-                    case "Cow": animal.Progress += 2; break;
-                    case "Sheep": animal.Progress += 1; break;
-                    case "Chicken": animal.Progress += 3; break;
+                    case "Cow":
+                        animal.Progress += 2; break;
+                    case "Sheep":
+                        animal.Progress += 1; break;
+                    case "Chicken":
+                        animal.Progress += 3; break;
                 }
 
                 if (animal.Progress >= 100)

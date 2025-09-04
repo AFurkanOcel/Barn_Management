@@ -45,15 +45,6 @@ namespace PresentationLayer
             dataGridViewAnimals.Columns["Progress"].Visible = false;
             dataGridViewAnimals.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-        private void AnimalForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -122,7 +113,7 @@ namespace PresentationLayer
 
                 if(animalComboBox.Text == "Cow" && lastBalance < cowPrice  ||  animalComboBox.Text == "Sheep" && lastBalance < sheepPrice  ||  animalComboBox.Text == "Chicken" && lastBalance < chickenPrice  ||  animalComboBox.Text == "Dog" && lastBalance < dogPrice)
                 {
-                    MessageBox.Show("Insufficient balance to buy this animal!");
+                    MessageBox.Show($"Insufficient balance to buy {animalComboBox.Text}!");
                     return;
                 }
 
