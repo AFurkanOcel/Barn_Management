@@ -17,10 +17,6 @@ namespace PresentationLayer
             {
                 Application.Exit();
             }
-            else
-            {
-                e.Cancel = true;
-            }
         }
     }
 }

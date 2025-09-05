@@ -28,13 +28,19 @@ namespace PresentationLayer
         public void openMusicBtn_Click(object sender, EventArgs e)
         {
             MusicControl.IsCloseMusicButtonEnabled = false;
-            ((LogInForm)Application.OpenForms["LogInForm"]).SetMusicVolume();
+            if (Application.OpenForms["LogInForm"] is LogInForm loginForm)
+            {
+                loginForm.SetMusicVolume();
+            }
         }
 
         public void closeMusicBtn_Click(object sender, EventArgs e)
         {
             MusicControl.IsCloseMusicButtonEnabled = true;
-            ((LogInForm)Application.OpenForms["LogInForm"]).SetMusicVolume();
+            if (Application.OpenForms["LogInForm"] is LogInForm loginForm)
+            {
+                loginForm.SetMusicVolume();
+            }
         }
 
         private void logOutBtn_Click(object sender, EventArgs e)
