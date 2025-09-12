@@ -44,7 +44,7 @@
             this.button3.Location = new System.Drawing.Point(879, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 30);
-            this.button3.TabIndex = 14;
+            this.button3.TabIndex = 5;
             this.button3.Text = "Menu";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -57,7 +57,7 @@
             this.label1.Location = new System.Drawing.Point(114, 237);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(253, 76);
-            this.label1.TabIndex = 15;
+            this.label1.TabIndex = 0;
             this.label1.Text = "MUSIC";
             // 
             // exitBtn
@@ -66,7 +66,7 @@
             this.exitBtn.Location = new System.Drawing.Point(568, 334);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(250, 80);
-            this.exitBtn.TabIndex = 19;
+            this.exitBtn.TabIndex = 4;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
@@ -79,7 +79,7 @@
             this.label2.Location = new System.Drawing.Point(111, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(707, 91);
-            this.label2.TabIndex = 20;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Barn Management";
             // 
             // logOutBtn
@@ -88,7 +88,7 @@
             this.logOutBtn.Location = new System.Drawing.Point(568, 233);
             this.logOutBtn.Name = "logOutBtn";
             this.logOutBtn.Size = new System.Drawing.Size(250, 80);
-            this.logOutBtn.TabIndex = 21;
+            this.logOutBtn.TabIndex = 3;
             this.logOutBtn.Text = "Log Out";
             this.logOutBtn.UseVisualStyleBackColor = true;
             this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
@@ -101,7 +101,7 @@
             this.openMusicBtn.Location = new System.Drawing.Point(127, 334);
             this.openMusicBtn.Name = "openMusicBtn";
             this.openMusicBtn.Size = new System.Drawing.Size(100, 80);
-            this.openMusicBtn.TabIndex = 22;
+            this.openMusicBtn.TabIndex = 1;
             this.openMusicBtn.UseVisualStyleBackColor = true;
             this.openMusicBtn.Click += new System.EventHandler(this.openMusicBtn_Click);
             // 
@@ -113,7 +113,7 @@
             this.closeMusicBtn.Location = new System.Drawing.Point(267, 334);
             this.closeMusicBtn.Name = "closeMusicBtn";
             this.closeMusicBtn.Size = new System.Drawing.Size(100, 80);
-            this.closeMusicBtn.TabIndex = 23;
+            this.closeMusicBtn.TabIndex = 2;
             this.closeMusicBtn.UseVisualStyleBackColor = true;
             this.closeMusicBtn.Click += new System.EventHandler(this.closeMusicBtn_Click);
             // 

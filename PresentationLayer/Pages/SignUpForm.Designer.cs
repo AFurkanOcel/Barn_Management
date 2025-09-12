@@ -48,7 +48,7 @@
             this.signUpBtn.Location = new System.Drawing.Point(112, 298);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(150, 64);
-            this.signUpBtn.TabIndex = 15;
+            this.signUpBtn.TabIndex = 4;
             this.signUpBtn.Text = "Sign Up";
             this.signUpBtn.UseVisualStyleBackColor = true;
             this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
@@ -60,7 +60,7 @@
             this.label2.Location = new System.Drawing.Point(74, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 29);
-            this.label2.TabIndex = 14;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Password:";
             // 
             // passwordTextBox
@@ -69,7 +69,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(79, 157);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(327, 30);
-            this.passwordTextBox.TabIndex = 13;
+            this.passwordTextBox.TabIndex = 2;
             // 
             // label1
             // 
@@ -78,7 +78,7 @@
             this.label1.Location = new System.Drawing.Point(74, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 29);
-            this.label1.TabIndex = 12;
+            this.label1.TabIndex = 0;
             this.label1.Text = "User Name:";
             // 
             // usernameTxtBox
@@ -87,7 +87,7 @@
             this.usernameTxtBox.Location = new System.Drawing.Point(79, 82);
             this.usernameTxtBox.Name = "usernameTxtBox";
             this.usernameTxtBox.Size = new System.Drawing.Size(327, 30);
-            this.usernameTxtBox.TabIndex = 11;
+            this.usernameTxtBox.TabIndex = 1;
             // 
             // logInBtn
             // 
@@ -95,7 +95,7 @@
             this.logInBtn.Location = new System.Drawing.Point(157, 453);
             this.logInBtn.Name = "logInBtn";
             this.logInBtn.Size = new System.Drawing.Size(150, 64);
-            this.logInBtn.TabIndex = 10;
+            this.logInBtn.TabIndex = 5;
             this.logInBtn.Text = "Log In";
             this.logInBtn.UseVisualStyleBackColor = true;
             this.logInBtn.Click += new System.EventHandler(this.LogInBtn_Click);
@@ -107,7 +107,7 @@
             this.label3.Location = new System.Drawing.Point(74, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 29);
-            this.label3.TabIndex = 17;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Password Again:";
             // 
             // passwordTextBox2
@@ -116,7 +116,7 @@
             this.passwordTextBox2.Location = new System.Drawing.Point(79, 234);
             this.passwordTextBox2.Name = "passwordTextBox2";
             this.passwordTextBox2.Size = new System.Drawing.Size(327, 30);
-            this.passwordTextBox2.TabIndex = 16;
+            this.passwordTextBox2.TabIndex = 3;
             // 
             // logInLbl
             // 
@@ -126,7 +126,7 @@
             this.logInLbl.Location = new System.Drawing.Point(94, 412);
             this.logInLbl.Name = "logInLbl";
             this.logInLbl.Size = new System.Drawing.Size(284, 29);
-            this.logInLbl.TabIndex = 18;
+            this.logInLbl.TabIndex = 0;
             this.logInLbl.Text = "Already have an account?";
             // 
             // userRadioBtn
@@ -137,7 +137,7 @@
             this.userRadioBtn.Location = new System.Drawing.Point(280, 298);
             this.userRadioBtn.Name = "userRadioBtn";
             this.userRadioBtn.Size = new System.Drawing.Size(74, 29);
-            this.userRadioBtn.TabIndex = 19;
+            this.userRadioBtn.TabIndex = 6;
             this.userRadioBtn.TabStop = true;
             this.userRadioBtn.Text = "User";
             this.userRadioBtn.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.adminRadioButton.Location = new System.Drawing.Point(280, 333);
             this.adminRadioButton.Name = "adminRadioButton";
             this.adminRadioButton.Size = new System.Drawing.Size(89, 29);
-            this.adminRadioButton.TabIndex = 20;
+            this.adminRadioButton.TabIndex = 0;
             this.adminRadioButton.Text = "Admin";
             this.adminRadioButton.UseVisualStyleBackColor = true;
             // 

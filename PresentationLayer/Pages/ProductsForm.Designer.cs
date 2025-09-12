@@ -57,7 +57,7 @@
             this.button3.Location = new System.Drawing.Point(879, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 30);
-            this.button3.TabIndex = 15;
+            this.button3.TabIndex = 12;
             this.button3.Text = "Menu";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -79,7 +79,7 @@
             this.label2.Location = new System.Drawing.Point(245, 333);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 58);
-            this.label2.TabIndex = 18;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Products";
             // 
             // ıdTextBox
@@ -88,7 +88,7 @@
             this.ıdTextBox.Location = new System.Drawing.Point(763, 121);
             this.ıdTextBox.Name = "ıdTextBox";
             this.ıdTextBox.Size = new System.Drawing.Size(183, 34);
-            this.ıdTextBox.TabIndex = 19;
+            this.ıdTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -97,7 +97,7 @@
             this.label3.Location = new System.Drawing.Point(705, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 32);
-            this.label3.TabIndex = 20;
+            this.label3.TabIndex = 0;
             this.label3.Text = "ID:";
             // 
             // sellBtn
@@ -106,7 +106,7 @@
             this.sellBtn.Location = new System.Drawing.Point(711, 216);
             this.sellBtn.Name = "sellBtn";
             this.sellBtn.Size = new System.Drawing.Size(235, 40);
-            this.sellBtn.TabIndex = 21;
+            this.sellBtn.TabIndex = 3;
             this.sellBtn.Text = "Sell";
             this.sellBtn.UseVisualStyleBackColor = true;
             this.sellBtn.Click += new System.EventHandler(this.sellBtn_Click);
@@ -117,7 +117,7 @@
             this.updateBtn.Location = new System.Drawing.Point(711, 264);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(235, 40);
-            this.updateBtn.TabIndex = 23;
+            this.updateBtn.TabIndex = 4;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
@@ -128,7 +128,7 @@
             this.updateBtn2.Location = new System.Drawing.Point(711, 481);
             this.updateBtn2.Name = "updateBtn2";
             this.updateBtn2.Size = new System.Drawing.Size(235, 40);
-            this.updateBtn2.TabIndex = 24;
+            this.updateBtn2.TabIndex = 7;
             this.updateBtn2.Text = "Update";
             this.updateBtn2.UseVisualStyleBackColor = true;
             this.updateBtn2.Click += new System.EventHandler(this.updateBtn2_Click);
@@ -140,7 +140,7 @@
             this.balanceLbl.Location = new System.Drawing.Point(91, 17);
             this.balanceLbl.Name = "balanceLbl";
             this.balanceLbl.Size = new System.Drawing.Size(54, 25);
-            this.balanceLbl.TabIndex = 27;
+            this.balanceLbl.TabIndex = 0;
             this.balanceLbl.Text = "00 $";
             // 
             // balancePicBox
@@ -159,7 +159,7 @@
             this.getBtn.Location = new System.Drawing.Point(711, 170);
             this.getBtn.Name = "getBtn";
             this.getBtn.Size = new System.Drawing.Size(235, 40);
-            this.getBtn.TabIndex = 28;
+            this.getBtn.TabIndex = 2;
             this.getBtn.Text = "Get ";
             this.getBtn.UseVisualStyleBackColor = true;
             this.getBtn.Click += new System.EventHandler(this.getBtn_Click);
@@ -170,7 +170,7 @@
             this.sellBtn2.Location = new System.Drawing.Point(711, 443);
             this.sellBtn2.Name = "sellBtn2";
             this.sellBtn2.Size = new System.Drawing.Size(235, 34);
-            this.sellBtn2.TabIndex = 29;
+            this.sellBtn2.TabIndex = 6;
             this.sellBtn2.Text = "Sell";
             this.sellBtn2.UseVisualStyleBackColor = true;
             this.sellBtn2.Click += new System.EventHandler(this.sellBtn2_Click);
@@ -187,7 +187,7 @@
             this.productsComboBox.Location = new System.Drawing.Point(711, 394);
             this.productsComboBox.Name = "productsComboBox";
             this.productsComboBox.Size = new System.Drawing.Size(235, 33);
-            this.productsComboBox.TabIndex = 30;
+            this.productsComboBox.TabIndex = 5;
             // 
             // contextMenuStrip1
             // 
@@ -209,7 +209,7 @@
             this.dataGridViewProducts.RowHeadersWidth = 51;
             this.dataGridViewProducts.RowTemplate.Height = 24;
             this.dataGridViewProducts.Size = new System.Drawing.Size(634, 127);
-            this.dataGridViewProducts.TabIndex = 32;
+            this.dataGridViewProducts.TabIndex = 11;
             // 
             // dataGridViewAnimals
             // 
@@ -225,7 +225,7 @@
             this.dataGridViewAnimals.RowHeadersWidth = 51;
             this.dataGridViewAnimals.RowTemplate.Height = 24;
             this.dataGridViewAnimals.Size = new System.Drawing.Size(634, 183);
-            this.dataGridViewAnimals.TabIndex = 33;
+            this.dataGridViewAnimals.TabIndex = 10;
             // 
             // ProductsForm
             // 

@@ -120,7 +120,6 @@
     <Compile Include="Pages\AnimalForm.Designer.cs">
       <DependentUpon>AnimalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GlobalMethods.cs" />
     <Compile Include="Hashing.cs" />
     <Compile Include="Pages\LogInForm.cs">
       <SubType>Form</SubType>

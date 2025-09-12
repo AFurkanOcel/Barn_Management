@@ -47,7 +47,7 @@
             this.menuBtn.Location = new System.Drawing.Point(879, 12);
             this.menuBtn.Name = "menuBtn";
             this.menuBtn.Size = new System.Drawing.Size(91, 30);
-            this.menuBtn.TabIndex = 15;
+            this.menuBtn.TabIndex = 5;
             this.menuBtn.Text = "Menu";
             this.menuBtn.UseVisualStyleBackColor = true;
             this.menuBtn.Click += new System.EventHandler(this.menuBtn_Click);
@@ -60,7 +60,7 @@
             this.label1.Location = new System.Drawing.Point(44, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 58);
-            this.label1.TabIndex = 17;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Balance:";
             // 
             // addBtn
@@ -69,7 +69,7 @@
             this.addBtn.Location = new System.Drawing.Point(457, 71);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(100, 54);
-            this.addBtn.TabIndex = 19;
+            this.addBtn.TabIndex = 2;
             this.addBtn.Text = "Add";
             this.addBtn.UseVisualStyleBackColor = true;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
@@ -81,7 +81,7 @@
             this.balanceTxtBox.Location = new System.Drawing.Point(279, 72);
             this.balanceTxtBox.Name = "balanceTxtBox";
             this.balanceTxtBox.Size = new System.Drawing.Size(156, 53);
-            this.balanceTxtBox.TabIndex = 20;
+            this.balanceTxtBox.TabIndex = 1;
             this.balanceTxtBox.Text = "00";
             // 
             // updateBtn
@@ -90,7 +90,7 @@
             this.updateBtn.Location = new System.Drawing.Point(757, 74);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(169, 54);
-            this.updateBtn.TabIndex = 21;
+            this.updateBtn.TabIndex = 3;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
@@ -102,7 +102,7 @@
             this.balanceLbl.Location = new System.Drawing.Point(106, 17);
             this.balanceLbl.Name = "balanceLbl";
             this.balanceLbl.Size = new System.Drawing.Size(54, 25);
-            this.balanceLbl.TabIndex = 23;
+            this.balanceLbl.TabIndex = 0;
             this.balanceLbl.Text = "00 $";
             // 
             // balancePicBox
@@ -129,7 +129,7 @@
             this.dataGridViewTransactions.RowHeadersWidth = 51;
             this.dataGridViewTransactions.RowTemplate.Height = 24;
             this.dataGridViewTransactions.Size = new System.Drawing.Size(872, 360);
-            this.dataGridViewTransactions.TabIndex = 24;
+            this.dataGridViewTransactions.TabIndex = 4;
             // 
             // SalesForm
             // 

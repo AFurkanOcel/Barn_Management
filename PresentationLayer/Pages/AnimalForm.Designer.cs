@@ -85,7 +85,7 @@
             this.animalComboBox.Location = new System.Drawing.Point(126, 263);
             this.animalComboBox.Name = "animalComboBox";
             this.animalComboBox.Size = new System.Drawing.Size(227, 28);
-            this.animalComboBox.TabIndex = 2;
+            this.animalComboBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -94,7 +94,7 @@
             this.label1.Location = new System.Drawing.Point(28, 262);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 25);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Animal :";
             // 
             // label2
@@ -104,7 +104,7 @@
             this.label2.Location = new System.Drawing.Point(38, 313);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 25);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Name :";
             // 
             // nameTextBox
@@ -113,7 +113,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(126, 313);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(227, 27);
-            this.nameTextBox.TabIndex = 6;
+            this.nameTextBox.TabIndex = 1;
             // 
             // panel2
             // 
@@ -123,7 +123,7 @@
             this.panel2.Location = new System.Drawing.Point(34, 56);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(211, 173);
-            this.panel2.TabIndex = 7;
+            this.panel2.TabIndex = 0;
             // 
             // cowPriceLbl
             // 
@@ -132,7 +132,7 @@
             this.cowPriceLbl.Location = new System.Drawing.Point(62, 136);
             this.cowPriceLbl.Name = "cowPriceLbl";
             this.cowPriceLbl.Size = new System.Drawing.Size(73, 32);
-            this.cowPriceLbl.TabIndex = 1;
+            this.cowPriceLbl.TabIndex = 0;
             this.cowPriceLbl.Text = "70 $";
             // 
             // pictureBox1
@@ -153,7 +153,7 @@
             this.panel3.Location = new System.Drawing.Point(735, 56);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(211, 173);
-            this.panel3.TabIndex = 8;
+            this.panel3.TabIndex = 0;
             // 
             // dogPriceLbl
             // 
@@ -162,7 +162,7 @@
             this.dogPriceLbl.Location = new System.Drawing.Point(69, 136);
             this.dogPriceLbl.Name = "dogPriceLbl";
             this.dogPriceLbl.Size = new System.Drawing.Size(73, 32);
-            this.dogPriceLbl.TabIndex = 4;
+            this.dogPriceLbl.TabIndex = 0;
             this.dogPriceLbl.Text = "40 $";
             // 
             // pictureBox4
@@ -183,7 +183,7 @@
             this.panel4.Location = new System.Drawing.Point(503, 56);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(211, 173);
-            this.panel4.TabIndex = 8;
+            this.panel4.TabIndex = 0;
             // 
             // chickenPriceLbl
             // 
@@ -192,7 +192,7 @@
             this.chickenPriceLbl.Location = new System.Drawing.Point(68, 136);
             this.chickenPriceLbl.Name = "chickenPriceLbl";
             this.chickenPriceLbl.Size = new System.Drawing.Size(73, 32);
-            this.chickenPriceLbl.TabIndex = 3;
+            this.chickenPriceLbl.TabIndex = 0;
             this.chickenPriceLbl.Text = "10 $";
             // 
             // pictureBox3
@@ -213,7 +213,7 @@
             this.panel5.Location = new System.Drawing.Point(269, 56);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(211, 173);
-            this.panel5.TabIndex = 8;
+            this.panel5.TabIndex = 0;
             // 
             // sheepPriceLbl
             // 
@@ -222,7 +222,7 @@
             this.sheepPriceLbl.Location = new System.Drawing.Point(68, 136);
             this.sheepPriceLbl.Name = "sheepPriceLbl";
             this.sheepPriceLbl.Size = new System.Drawing.Size(73, 32);
-            this.sheepPriceLbl.TabIndex = 2;
+            this.sheepPriceLbl.TabIndex = 0;
             this.sheepPriceLbl.Text = "35 $";
             // 
             // pictureBox2
@@ -241,7 +241,7 @@
             this.buyBtn.Location = new System.Drawing.Point(208, 431);
             this.buyBtn.Name = "buyBtn";
             this.buyBtn.Size = new System.Drawing.Size(145, 86);
-            this.buyBtn.TabIndex = 9;
+            this.buyBtn.TabIndex = 5;
             this.buyBtn.Text = "Buy";
             this.buyBtn.UseVisualStyleBackColor = true;
             this.buyBtn.Click += new System.EventHandler(this.buyBtn_Click);
@@ -252,7 +252,7 @@
             this.updateBtn.Location = new System.Drawing.Point(34, 431);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(145, 86);
-            this.updateBtn.TabIndex = 12;
+            this.updateBtn.TabIndex = 4;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
@@ -263,7 +263,7 @@
             this.button3.Location = new System.Drawing.Point(879, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 30);
-            this.button3.TabIndex = 13;
+            this.button3.TabIndex = 7;
             this.button3.Text = "Menu";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -285,7 +285,7 @@
             this.balanceLbl.Location = new System.Drawing.Point(86, 17);
             this.balanceLbl.Name = "balanceLbl";
             this.balanceLbl.Size = new System.Drawing.Size(54, 25);
-            this.balanceLbl.TabIndex = 15;
+            this.balanceLbl.TabIndex = 0;
             this.balanceLbl.Text = "00 $";
             // 
             // label3
@@ -295,7 +295,7 @@
             this.label3.Location = new System.Drawing.Point(55, 368);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 25);
-            this.label3.TabIndex = 10;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Age :";
             // 
             // ageTextBox
@@ -304,7 +304,7 @@
             this.ageTextBox.Location = new System.Drawing.Point(126, 367);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(227, 27);
-            this.ageTextBox.TabIndex = 11;
+            this.ageTextBox.TabIndex = 3;
             // 
             // dataGridViewAnimals
             // 
@@ -320,7 +320,7 @@
             this.dataGridViewAnimals.RowHeadersWidth = 51;
             this.dataGridViewAnimals.RowTemplate.Height = 24;
             this.dataGridViewAnimals.Size = new System.Drawing.Size(574, 255);
-            this.dataGridViewAnimals.TabIndex = 16;
+            this.dataGridViewAnimals.TabIndex = 6;
             // 
             // AnimalForm
             // 

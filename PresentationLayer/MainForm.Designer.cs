@@ -77,7 +77,7 @@
             this.panel3.Location = new System.Drawing.Point(504, 191);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(220, 350);
-            this.panel3.TabIndex = 2;
+            this.panel3.TabIndex = 3;
             // 
             // button3
             // 
@@ -188,7 +188,7 @@
             this.panel1.Location = new System.Drawing.Point(749, 191);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 350);
-            this.panel1.TabIndex = 8;
+            this.panel1.TabIndex = 4;
             // 
             // button4
             // 
@@ -197,7 +197,7 @@
             this.button4.Location = new System.Drawing.Point(25, 233);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(168, 88);
-            this.button4.TabIndex = 7;
+            this.button4.TabIndex = 8;
             this.button4.Text = "Settings";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -220,7 +220,7 @@
             this.balanceLbl.Location = new System.Drawing.Point(277, 27);
             this.balanceLbl.Name = "balanceLbl";
             this.balanceLbl.Size = new System.Drawing.Size(54, 25);
-            this.balanceLbl.TabIndex = 17;
+            this.balanceLbl.TabIndex = 0;
             this.balanceLbl.Text = "00 $";
             // 
             // balancePicBox
