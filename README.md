@@ -27,6 +27,48 @@ This project solves that problem by providing a structured desktop application t
 * Secure user authentication
 * Centralized data management
 
+<img width="920" height="598" alt="Menu" src="https://github.com/user-attachments/assets/2d42e8ad-19e5-4603-b0a0-eb01e76b727c" />
+
+---
+
+# Project Structure
+
+```text
+Barn_Management/
+│── Barn_Management.sln
+│── README.md
+│
+├── PresentationLayer/
+│   ├── MainForm.cs
+│   ├── Pages/
+│   │   ├── LogInForm.cs
+│   │   ├── SignUpForm.cs
+│   │   ├── AnimalForm.cs
+│   │   ├── ProductsForm.cs
+│   │   ├── SalesForm.cs
+│   │   └── SettingsForm.cs
+│   ├── App.config
+│   └── Audios/
+│       └── Music.mp3
+│
+├── BusinessLayer/
+│   └── Business logic services
+│
+├── DataAccessLayer/
+│   ├── Abstract/
+│   ├── Migrations/
+│   └── Entity Framework repositories
+│
+├── EntityLayer/
+│   └── Entities/
+│       ├── User.cs
+│       ├── Animal.cs
+│       ├── Product.cs
+│       └── Transaction.cs
+│
+└── ProjectUtils/
+    └── Shared helper utilities
+
 ---
 
 ## Features
@@ -222,29 +264,25 @@ Set **PresentationLayer** as startup project and run.
 
 ## Screenshots
 
-### Login Screen
+### Login - Signup
 
-![Login](screenshots/login.png)
+<img width="909" height="595" alt="LogIn_SignUp" src="https://github.com/user-attachments/assets/46c7067d-ed1d-4344-a57f-b1212d714878" />
 
-### Dashboard
+### Animals
 
-![Dashboard](screenshots/dashboard.png)
+<img width="919" height="597" alt="Animals" src="https://github.com/user-attachments/assets/d7754e9c-1a0f-49d8-a060-d5601d802cb4" />
 
-### Animal Management
+### Products
 
-![Animal](screenshots/animal.png)
-
-### Product Management
-
-![Products](screenshots/products.png)
+<img width="920" height="599" alt="Products" src="https://github.com/user-attachments/assets/d7fc6b76-7b2a-4dc6-a829-2d6efe929ee8" />
 
 ### Sales
 
-![Sales](screenshots/sales.png)
+<img width="918" height="598" alt="Sales" src="https://github.com/user-attachments/assets/69f57d2d-a7fa-48e1-a15f-8843871dc536" />
 
 ### Settings
 
-![Settings](screenshots/settings.png)
+<img width="920" height="597" alt="Settings" src="https://github.com/user-attachments/assets/f5945d85-e286-4bbe-8a9b-b38a8f3fde83" />
 
 ---
 
@@ -276,7 +314,3 @@ This project helped improve my experience in:
 ## Author
 
 **Ahmet Furkan Öcel**
-Computer Engineering Student
-Bursa Technical University
-
-GitHub: [AFurkanOcel](https://github.com/AFurkanOcel?utm_source=chatgpt.com)
