@@ -1,116 +1,112 @@
-````md
-# Barn Management System
+<h1 align="center">Barn Management System</h1>
 
-![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.8-purple)
-![WinForms](https://img.shields.io/badge/UI-Windows%20Forms-blue)
-![Entity Framework](https://img.shields.io/badge/ORM-Entity%20Framework%206-green)
-![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red)
-![Architecture](https://img.shields.io/badge/Architecture-Layered-orange)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+<p align="center">
+Desktop-based barn/farm management application built with C#, WinForms and Entity Framework.
+</p>
 
-A desktop-based **Barn Management System** developed with **C#**, **Windows Forms**, and **Entity Framework 6**, following a **Layered Architecture** approach.
-
-This application was designed to digitalize and simplify farm/barn operations such as **animal tracking**, **product inventory management**, **sales transactions**, and **user authentication** through a clean desktop interface.
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET%20Framework-4.8-purple"/>
+  <img src="https://img.shields.io/badge/UI-Windows%20Forms-blue"/>
+  <img src="https://img.shields.io/badge/ORM-Entity%20Framework%206-green"/>
+  <img src="https://img.shields.io/badge/Database-SQL%20Server-red"/>
+  <img src="https://img.shields.io/badge/Architecture-Layered-orange"/>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen"/>
+</p>
 
 ---
 
-# Project Overview
+## Project Overview
 
 Managing livestock and barn operations manually can become inefficient and error-prone as data grows.
 
 This project solves that problem by providing a structured desktop application that enables:
 
-- animal registration and monitoring,
-- product/inventory management,
-- transaction recording,
-- secure user authentication,
-- and centralized data management.
+* Animal registration and monitoring
+* Product and inventory management
+* Transaction recording
+* Secure user authentication
+* Centralized data management
 
 ---
 
-# Features
+## Features
 
 ### Authentication & Security
-- User registration
-- User login
-- Password hashing using **BCrypt**
-- Global authentication/session handling
 
----
+* User registration
+* User login
+* Password hashing using **BCrypt**
+* Global authentication/session handling
 
 ### Animal Management
-- Add new animals
-- Update animal records
-- Delete animals
-- View all registered animals
 
----
+* Add new animals
+* Update animal records
+* Delete animals
+* View all registered animals
 
 ### Product Management
-- Add/edit/remove products
-- Product stock tracking
-- Inventory organization
 
----
+* Add, edit and remove products
+* Product stock tracking
+* Inventory organization
 
 ### Sales & Transactions
-- Record sales transactions
-- Track product movements
-- Transaction history support
 
----
+* Record sales transactions
+* Track product movements
+* Transaction history support
 
 ### Settings
-- User/application settings management
 
----
+* User and application settings management
 
 ### Logging
-- File-based logging with **Serilog**
-- Error/event tracking
 
----
+* File-based logging with **Serilog**
+* Error and event tracking
 
 ### Extra Feature
-- Background music support using **Windows Media Player API**
+
+* Background music support using **Windows Media Player API**
 
 ---
 
-# Technologies Used
+## Technologies Used
 
-| Category | Technology |
-|----------|------------|
-| Language | C# |
-| Framework | .NET Framework 4.8 |
-| UI | Windows Forms |
-| ORM | Entity Framework 6.5.1 |
-| Database | Microsoft SQL Server |
-| Security | BCrypt.Net |
-| Logging | Serilog |
+| Category             | Technology                               |
+| -------------------- | ---------------------------------------- |
+| Language             | C#                                       |
+| Framework            | .NET Framework 4.8                       |
+| UI                   | Windows Forms                            |
+| ORM                  | Entity Framework 6.5.1                   |
+| Database             | Microsoft SQL Server                     |
+| Security             | BCrypt.Net                               |
+| Logging              | Serilog                                  |
 | Dependency Injection | Microsoft.Extensions.DependencyInjection |
-| Architecture | Layered Architecture |
+| Architecture         | Layered Architecture                     |
 
 ---
 
-# Architecture
+## Architecture
 
 This project follows a **5-layer architecture**:
 
-```text
-Presentation Layer
-    ↓
-Business Layer
-    ↓
-Data Access Layer
-    ↓
-Entity Layer
+```mermaid
+graph TD
+    A[Presentation Layer] --> B[Business Layer]
+    B --> C[Data Access Layer]
+    C --> D[Entity Layer]
+    E[ProjectUtils] --> A
+    E --> B
+    E --> C
+```
 
-+ ProjectUtils (shared utilities)
-````
+---
 
-### Layer Responsibilities
+## Layer Responsibilities
 
-#### PresentationLayer
+### PresentationLayer
 
 Contains all Windows Forms UI pages.
 
@@ -124,15 +120,11 @@ Forms:
 * SettingsForm
 * MainForm
 
----
-
-#### BusinessLayer
+### BusinessLayer
 
 Contains business rules and service logic.
 
----
-
-#### DataAccessLayer
+### DataAccessLayer
 
 Responsible for database communication.
 
@@ -142,9 +134,7 @@ Includes:
 * Entity Framework context
 * Code First Migrations
 
----
-
-#### EntityLayer
+### EntityLayer
 
 Contains entity models:
 
@@ -153,23 +143,19 @@ Contains entity models:
 * Transaction
 * User
 
----
+### ProjectUtils
 
-#### ProjectUtils
-
-Shared helper/utility classes.
+Shared helper and utility classes.
 
 ---
 
-# Database
+## Database
 
 Database provider:
 
-```text
-Microsoft SQL Server
-```
+`Microsoft SQL Server`
 
-Connection string (example):
+Connection string example:
 
 ```xml
 Data Source=YOUR_SERVER_NAME;
@@ -184,61 +170,43 @@ Uses:
 
 ---
 
-# Installation
+## Installation
 
-## 1. Clone repository
+### 1. Clone repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Barn_Management.git
+git clone https://github.com/AFurkanOcel/Barn_Management.git
 ```
 
----
-
-## 2. Open solution
+### 2. Open solution
 
 Open:
 
-```text
-Barn_Management.sln
-```
+`Barn_Management.sln`
 
 using **Visual Studio**.
 
----
-
-## 3. Restore NuGet packages
+### 3. Restore NuGet packages
 
 ```powershell
 Update-Package -reinstall
 ```
 
-or:
+or
 
 ```powershell
 nuget restore
 ```
 
----
-
-## 4. Configure database
+### 4. Configure database
 
 Open:
 
-```text
-PresentationLayer/App.config
-```
+`PresentationLayer/App.config`
 
-update:
+and update the connection string with your SQL Server instance.
 
-```xml
-<connectionStrings>
-```
-
-with your SQL Server instance.
-
----
-
-## 5. Apply migrations
+### 5. Apply migrations
 
 Open Package Manager Console:
 
@@ -246,90 +214,69 @@ Open Package Manager Console:
 Update-Database
 ```
 
----
+### 6. Run
 
-## 6. Run
-
-Set:
-
-```text
-PresentationLayer
-```
-
-as startup project and run.
+Set **PresentationLayer** as startup project and run.
 
 ---
 
-# Screenshots
+## Screenshots
 
-## Login Screen
+### Login Screen
 
-`[Add Login screenshot here]`
+![Login](screenshots/login.png)
 
----
+### Dashboard
 
-## Dashboard / Main Form
+![Dashboard](screenshots/dashboard.png)
 
-`[Add MainForm screenshot here]`
+### Animal Management
 
----
+![Animal](screenshots/animal.png)
 
-## Animal Management
+### Product Management
 
-`[Add AnimalForm screenshot here]`
+![Products](screenshots/products.png)
 
----
+### Sales
 
-## Product Management
+![Sales](screenshots/sales.png)
 
-`[Add ProductsForm screenshot here]`
+### Settings
 
----
-
-## Sales Page
-
-`[Add SalesForm screenshot here]`
+![Settings](screenshots/settings.png)
 
 ---
 
-## Settings
+## Future Improvements
 
-`[Add SettingsForm screenshot here]`
-
----
-
-# Future Improvements
-
-* role-based authorization
-* reporting dashboard
-* barcode support
-* cloud synchronization
-* backup/restore support
-* modern UI redesign (WPF / MAUI)
+* Role-based authorization
+* Reporting dashboard
+* Barcode support
+* Cloud synchronization
+* Backup and restore support
+* Modern UI redesign (WPF / MAUI)
 
 ---
 
-# Learning Outcomes
+## Learning Outcomes
 
 This project helped improve my experience in:
 
-* layered architecture design
+* Layered architecture design
 * Entity Framework
-* relational database design
-* desktop application development
-* authentication systems
-* logging systems
-* software architecture principles
+* Relational database design
+* Desktop application development
+* Authentication systems
+* Logging systems
+* Software architecture principles
 
 ---
 
-# Author
+## Author
 
 **Ahmet Furkan Öcel**
 Computer Engineering Student
 Bursa Technical University
 
-GitHub: https://github.com/AFurkanOcel
-
-```
-```
+GitHub: [AFurkanOcel](https://github.com/AFurkanOcel?utm_source=chatgpt.com)
