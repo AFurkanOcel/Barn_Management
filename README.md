@@ -314,4 +314,4 @@ This project helped improve my experience in:
 
 ## Author
 
-**Ahmet Furkan Öcel**
+**A. Furkan ÖCEL**
