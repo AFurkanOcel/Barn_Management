@@ -31,7 +31,7 @@ This project solves that problem by providing a structured desktop application t
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
 Barn_Management/
@@ -68,6 +68,7 @@ Barn_Management/
 │
 └── ProjectUtils/
     └── Shared helper utilities
+```
 
 ---
 
