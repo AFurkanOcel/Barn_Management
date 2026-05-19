@@ -21,6 +21,8 @@ Managing livestock and barn operations manually can become inefficient and error
 
 This project provides a structured desktop application for managing core barn operations, including animal records, products, inventory, sales transactions, authentication, and centralized data storage.
 
+![Dashboard](assets/screenshots/dashboard.png)
+
 ---
 
 ## Features
