@@ -306,8 +306,6 @@ This project helped improve my experience in:
 
 **A. Furkan ÖCEL**
 
-GitHub: [AFurkanOcel](https://github.com/AFurkanOcel)
-
 ---
 
 ## License
