@@ -1,15 +1,15 @@
 <h1 align="center">Barn Management System</h1>
 
 <p align="center">
-Desktop-based barn/farm management application built with C#, WinForms and Entity Framework.
+Barn management system built with C#, .NET Framework, WinForms, Entity Framework, and SQL Server.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/.NET%20Framework-4.8-purple"/>
-  <img src="https://img.shields.io/badge/UI-Windows%20Forms-blue"/>
-  <img src="https://img.shields.io/badge/ORM-Entity%20Framework%206-green"/>
-  <img src="https://img.shields.io/badge/Database-SQL%20Server-red"/>
-  <img src="https://img.shields.io/badge/Architecture-Layered-orange"/>
+  <img src="https://img.shields.io/badge/C%23-.NET%20Framework%204.8-512BD4"/>
+  <img src="https://img.shields.io/badge/UI-Windows%20Forms-0078D4"/>
+  <img src="https://img.shields.io/badge/ORM-Entity%20Framework%206.5.1-2E7D32"/>
+  <img src="https://img.shields.io/badge/Database-SQL%20Server-CC2927"/>
+  <img src="https://img.shields.io/badge/Architecture-Layered-FF8C00"/>
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen"/>
 </p>
 
@@ -19,56 +19,7 @@ Desktop-based barn/farm management application built with C#, WinForms and Entit
 
 Managing livestock and barn operations manually can become inefficient and error-prone as data grows.
 
-This project solves that problem by providing a structured desktop application that enables:
-
-* Animal registration and monitoring
-* Product and inventory management
-* Transaction recording
-* Secure user authentication
-* Centralized data management
-
-<img width="920" height="598" alt="Menu" src="https://github.com/user-attachments/assets/2d42e8ad-19e5-4603-b0a0-eb01e76b727c" />
-
----
-
-## Project Structure
-
-```text
-Barn_Management/
-│── Barn_Management.sln
-│── README.md
-│
-├── PresentationLayer/
-│   ├── MainForm.cs
-│   ├── Pages/
-│   │   ├── LogInForm.cs
-│   │   ├── SignUpForm.cs
-│   │   ├── AnimalForm.cs
-│   │   ├── ProductsForm.cs
-│   │   ├── SalesForm.cs
-│   │   └── SettingsForm.cs
-│   ├── App.config
-│   └── Audios/
-│       └── Music.mp3
-│
-├── BusinessLayer/
-│   └── Business logic services
-│
-├── DataAccessLayer/
-│   ├── Abstract/
-│   ├── Migrations/
-│   └── Entity Framework repositories
-│
-├── EntityLayer/
-│   └── Entities/
-│       ├── User.cs
-│       ├── Animal.cs
-│       ├── Product.cs
-│       └── Transaction.cs
-│
-└── ProjectUtils/
-    └── Shared helper utilities
-```
+This project provides a structured desktop application for managing core barn operations, including animal records, products, inventory, sales transactions, authentication, and centralized data storage.
 
 ---
 
@@ -78,7 +29,7 @@ Barn_Management/
 
 * User registration
 * User login
-* Password hashing using **BCrypt**
+* Password hashing using **BCrypt.Net**
 * Global authentication/session handling
 
 ### Animal Management
@@ -88,7 +39,7 @@ Barn_Management/
 * Delete animals
 * View all registered animals
 
-### Product Management
+### Product & Inventory Management
 
 * Add, edit and remove products
 * Product stock tracking
@@ -121,26 +72,27 @@ Barn_Management/
 | -------------------- | ---------------------------------------- |
 | Language             | C#                                       |
 | Framework            | .NET Framework 4.8                       |
-| UI                   | Windows Forms                            |
+| Desktop UI           | Windows Forms                            |
 | ORM                  | Entity Framework 6.5.1                   |
 | Database             | Microsoft SQL Server                     |
-| Security             | BCrypt.Net                               |
+| Security             | BCrypt.Net-Next                          |
 | Logging              | Serilog                                  |
 | Dependency Injection | Microsoft.Extensions.DependencyInjection |
 | Architecture         | Layered Architecture                     |
+| Shared Utilities     | .NET Standard 2.0 class library          |
 
 ---
 
 ## Architecture
 
-This project follows a **5-layer architecture**:
+The solution follows a layered architecture that separates the user interface, business rules, data access logic, entity models, and shared utilities.
 
 ```mermaid
 graph TD
-    A[Presentation Layer] --> B[Business Layer]
-    B --> C[Data Access Layer]
-    C --> D[Entity Layer]
-    E[ProjectUtils] --> A
+    A[PresentationLayer - WinForms UI] --> B[BusinessLayer - Business Logic]
+    B --> C[DataAccessLayer - Repository and EF Context]
+    C --> D[EntityLayer - Domain Entities]
+    E[ProjectUtils - Shared Utilities] --> A
     E --> B
     E --> C
 ```
@@ -155,7 +107,7 @@ Contains all Windows Forms UI pages.
 
 Forms:
 
-* LoginForm
+* LogInForm
 * SignUpForm
 * AnimalForm
 * ProductsForm
@@ -165,7 +117,7 @@ Forms:
 
 ### BusinessLayer
 
-Contains business rules and service logic.
+Contains business rules and service logic for animals, products, transactions, and users.
 
 ### DataAccessLayer
 
@@ -173,9 +125,9 @@ Responsible for database communication.
 
 Includes:
 
-* Repository operations
+* Generic repository operations
 * Entity Framework context
-* Code First Migrations
+* Code First migration configuration
 
 ### EntityLayer
 
@@ -188,7 +140,39 @@ Contains entity models:
 
 ### ProjectUtils
 
-Shared helper and utility classes.
+Contains shared helper and utility classes used across the solution.
+
+---
+
+## Project Structure
+
+```text
+Barn_Management/
+|-- assets/
+|   `-- screenshots/
+|       |-- login-signup.png
+|       |-- dashboard.png
+|       |-- animals.png
+|       |-- products.png
+|       |-- sales.png
+|       `-- settings.png
+|-- BusinessLayer/
+|-- DataAccessLayer/
+|   |-- Abstract/
+|   `-- Migrations/
+|-- EntityLayer/
+|   `-- Entities/
+|-- PresentationLayer/
+|   |-- Pages/
+|   |-- Audios/
+|   `-- App.config
+|-- ProjectUtils/
+|-- Barn_Management.sln
+|-- LICENSE
+`-- README.md
+```
+
+Screenshot files are stored inside `assets/screenshots` so they remain available when the project is viewed on GitHub.
 
 ---
 
@@ -209,7 +193,7 @@ Integrated Security=True
 Uses:
 
 * Entity Framework Code First
-* Migration Configuration
+* Migration configuration
 
 ---
 
@@ -259,31 +243,35 @@ Update-Database
 
 ### 6. Run
 
-Set **PresentationLayer** as startup project and run.
+Set **PresentationLayer** as the startup project and run the application.
 
 ---
 
 ## Screenshots
 
-### Login - Signup
+### Login / Signup
 
-<img width="909" height="595" alt="LogIn_SignUp" src="https://github.com/user-attachments/assets/46c7067d-ed1d-4344-a57f-b1212d714878" />
+![Login and Signup](assets/screenshots/login-signup.png)
+
+### Dashboard
+
+![Dashboard](assets/screenshots/dashboard.png)
 
 ### Animals
 
-<img width="919" height="597" alt="Animals" src="https://github.com/user-attachments/assets/d7754e9c-1a0f-49d8-a060-d5601d802cb4" />
+![Animals](assets/screenshots/animals.png)
 
 ### Products
 
-<img width="920" height="599" alt="Products" src="https://github.com/user-attachments/assets/d7fc6b76-7b2a-4dc6-a829-2d6efe929ee8" />
+![Products](assets/screenshots/products.png)
 
 ### Sales
 
-<img width="918" height="598" alt="Sales" src="https://github.com/user-attachments/assets/69f57d2d-a7fa-48e1-a15f-8843871dc536" />
+![Sales](assets/screenshots/sales.png)
 
 ### Settings
 
-<img width="920" height="597" alt="Settings" src="https://github.com/user-attachments/assets/f5945d85-e286-4bbe-8a9b-b38a8f3fde83" />
+![Settings](assets/screenshots/settings.png)
 
 ---
 
@@ -294,7 +282,7 @@ Set **PresentationLayer** as startup project and run.
 * Barcode support
 * Cloud synchronization
 * Backup and restore support
-* Modern UI redesign (WPF / MAUI)
+* Modern UI redesign with WPF or .NET MAUI
 
 ---
 
@@ -315,6 +303,8 @@ This project helped improve my experience in:
 ## Author
 
 **A. Furkan ÖCEL**
+
+GitHub: [AFurkanOcel](https://github.com/AFurkanOcel)
 
 ---
 
