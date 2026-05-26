@@ -152,12 +152,6 @@ Contains shared helper and utility classes used across the solution.
 Barn_Management/
 |-- assets/
 |   `-- screenshots/
-|       |-- login-signup.png
-|       |-- dashboard.png
-|       |-- animals.png
-|       |-- products.png
-|       |-- sales.png
-|       `-- settings.png
 |-- BusinessLayer/
 |-- DataAccessLayer/
 |   |-- Abstract/
@@ -173,8 +167,6 @@ Barn_Management/
 |-- LICENSE
 `-- README.md
 ```
-
-Screenshot files are stored inside `assets/screenshots` so they remain available when the project is viewed on GitHub.
 
 ---
 
